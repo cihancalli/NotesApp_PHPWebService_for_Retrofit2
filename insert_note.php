@@ -3,9 +3,9 @@
     $response = array();
     
     if (isset($_POST['lesson_name']) && isset($_POST['note1']) && isset($_POST['note2'])) {
-        $ders_adi = $_POST['lesson_name'];
-        $not1 = $_POST['note1'];
-        $not2 = $_POST['note2'];
+        $lesson_name = $_POST['lesson_name'];
+        $note1 = $_POST['note1'];
+        $note2 = $_POST['note2'];
         
         //DB_SERVER,DB_USER,DB_PASSWORD,DB_DATABASE değişkenleri alınır.
         require_once __DIR__ . '/db_config.php';
